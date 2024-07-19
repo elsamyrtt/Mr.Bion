@@ -5,6 +5,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
 
 <VBox fx:id="gradient" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.iguanan.SecundaryController">
     <padding>
@@ -13,9 +14,34 @@
    <StackPane prefHeight="720" prefWidth="1366">
       <children>
           <MediaView fx:id="mediaView" />
-         <Button fx:id="botonAlien" mnemonicParsing="false" styleClass="botonMenu" text="Alien Game">
+         <Button fx:id="botonAlien" mnemonicParsing="false" styleClass="botonMenu" text="JUGAR">
             <StackPane.margin>
-               <Insets right="1275.0" />
+               <Insets right="1250.0" top="400.0" />
+            </StackPane.margin>
+            <font>
+               <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+         </Button>
+         <Button fx:id="botonAlien1" mnemonicParsing="false" onAction="#ajustesClick" styleClass="botonMenu" text="AJUSTES">
+            <font>
+               <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <StackPane.margin>
+               <Insets right="1250.0" top="500.0" />
+            </StackPane.margin>
+         </Button>
+         <Button fx:id="botonAlien11" mnemonicParsing="false" styleClass="botonMenu" text="SALIR">
+            <font>
+               <Font name="Segoe UI Semibold" size="18.0" />
+            </font>
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <StackPane.margin>
+               <Insets right="1250.0" top="600.0" />
             </StackPane.margin>
          </Button>
       </children>

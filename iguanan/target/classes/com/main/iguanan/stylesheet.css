@@ -1,10 +1,8 @@
-@font-face{
-    font-family: 'GoM';
-    src: url('GoM.ttf');
-}
 .botonMenu {
-    -fx-font-size: 12px;
-    -fx-font-family: 'GoM';
-    -fx-font-weight: 300;
-    -fx-text-fill: rgb(0, 0, 0);
+    -fx-background-color: #2f2e31;
+    -fx-text-fill: #91918f;
+}
+.botonMenu:hover{
+    -fx-background-color: #7f7c97;
+    -fx-text-fill: #2f2e31;
 }

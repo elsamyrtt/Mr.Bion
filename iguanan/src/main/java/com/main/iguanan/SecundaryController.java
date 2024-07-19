@@ -17,10 +17,11 @@ public class SecundaryController {
         @FXML
     private MediaView mediaView;
 
-    private Button botonAlien;
-
     private MediaPlayer mediaPlayer;
 
+    public void ajustesClick(){
+
+    }
     
     public void initialize() {
          // Verificar que mediaView no sea nulo antes de utilizarlo
