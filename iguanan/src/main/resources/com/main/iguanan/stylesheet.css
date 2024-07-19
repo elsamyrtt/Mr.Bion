@@ -1,6 +1,6 @@
 @font-face{
     font-family: 'GoM';
-    src: url('GoM.otf')
+    src: url('GoM.ttf');
 }
 .botonMenu {
     -fx-font-size: 12px;
