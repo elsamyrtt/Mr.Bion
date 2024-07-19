@@ -1,0 +1,10 @@
+@font-face{
+    font-family: 'GoM';
+    src: url('GoM.otf')
+}
+.botonMenu {
+    -fx-font-size: 12px;
+    -fx-font-family: 'GoM';
+    -fx-font-weight: 300;
+    -fx-text-fill: rgb(0, 0, 0);
+}
