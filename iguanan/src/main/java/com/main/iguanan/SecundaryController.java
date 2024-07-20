@@ -19,22 +19,28 @@ public class SecundaryController {
 
     private MediaPlayer mediaPlayer;
 
+
+    public boolean ajustes = false;
     public void ajustesClick(){
         try {
             App.setRoot("ajustes");
+            
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+        ajustes = true;
     }
 
     public void salirajustesClick(){
         try {
             App.setRoot("secondary");
+            
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
+        ajustes = false;
     }
     
     public void salirClick(){
@@ -48,6 +54,7 @@ public class SecundaryController {
             URL videoUrl = getClass().getResource("/com/main/iguanan/1p.mp4");
             Media media = new Media(videoUrl.toString());
             mediaPlayer = new MediaPlayer(media);
+            mediaPlayer.pause();
             // Establecer el MediaPlayer en el MediaView
             mediaView.setMediaPlayer(mediaPlayer);
             mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);  

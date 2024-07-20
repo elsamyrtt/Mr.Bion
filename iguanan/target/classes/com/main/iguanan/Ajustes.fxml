@@ -16,7 +16,6 @@
    <children>
       <StackPane prefHeight="720" prefWidth="1366">
          <children>
-            <MediaView fx:id="mediaView" opacity="0.52" />
             <Button fx:id="botonAlien" mnemonicParsing="false" opacity="0.52" styleClass="botonMenu" text="JUGAR">
                <StackPane.margin>
                   <Insets right="1250.0" top="400.0" />
