@@ -20,9 +20,18 @@ public class SecundaryController {
     private MediaPlayer mediaPlayer;
 
     public void ajustesClick(){
-
+        try {
+            App.setRoot("ajustes");
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
     
+    public void salirClick(){
+        System.exit(0);
+    }
+
     public void initialize() {
          // Verificar que mediaView no sea nulo antes de utilizarlo
          if (mediaView != null) {

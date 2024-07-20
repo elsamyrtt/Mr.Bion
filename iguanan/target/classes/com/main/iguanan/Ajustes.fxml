@@ -20,7 +20,7 @@
             <Button fx:id="botonAlien" mnemonicParsing="false" opacity="0.52" styleClass="botonMenu" text="JUGAR">
                <StackPane.margin>
                   <Insets right="1250.0" top="400.0" />
-               </StackPane.margin>
+               </StackPane.margin> 
                <font>
                   <Font name="Segoe UI Semibold" size="18.0" />
                </font>
@@ -36,7 +36,7 @@
                   <Insets right="1250.0" top="500.0" />
                </StackPane.margin>
             </Button>
-            <Button fx:id="botonAlien11" mnemonicParsing="false" opacity="0.52" styleClass="botonMenu" text="SALIR">
+            <Button fx:id="botonAlien11" mnemonicParsing="false" onAction="#salirClick" opacity="0.52" styleClass="botonMenu" text="SALIR">
                <font>
                   <Font name="Segoe UI Semibold" size="18.0" />
                </font>

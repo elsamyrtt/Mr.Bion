@@ -33,7 +33,7 @@
                <Insets right="1250.0" top="500.0" />
             </StackPane.margin>
          </Button>
-         <Button fx:id="botonAlien11" mnemonicParsing="false" styleClass="botonMenu" text="SALIR">
+         <Button fx:id="botonAlien11" mnemonicParsing="false" onAction="#salirClick" styleClass="botonMenu" text="SALIR">
             <font>
                <Font name="Segoe UI Semibold" size="18.0" />
             </font>
