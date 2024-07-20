@@ -27,6 +27,15 @@ public class SecundaryController {
             e.printStackTrace();
         }
     }
+
+    public void salirajustesClick(){
+        try {
+            App.setRoot("secondary");
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
     
     public void salirClick(){
         System.exit(0);

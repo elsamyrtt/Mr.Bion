@@ -25,7 +25,7 @@
                   <Font name="Segoe UI Semibold" size="18.0" />
                </font>
             </Button>
-            <Button fx:id="botonAlien1" mnemonicParsing="false" onAction="#ajustesClick" opacity="0.52" styleClass="botonMenu" text="AJUSTES">
+            <Button fx:id="botonAlien1" mnemonicParsing="false" onAction="#salirajustesClick" opacity="0.52" styleClass="botonMenu" text="AJUSTES">
                <font>
                   <Font name="Segoe UI Semibold" size="18.0" />
                </font>
