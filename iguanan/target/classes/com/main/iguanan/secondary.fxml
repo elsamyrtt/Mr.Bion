@@ -7,25 +7,22 @@
 <?import javafx.scene.media.MediaView?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="gradient" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.iguanan.SecundaryController">
+<VBox fx:id="gradient" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.main.iguanan.SecundaryController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <StackPane prefHeight="720" prefWidth="1366">
       <children>
           <MediaView fx:id="mediaView" />
-         <Button fx:id="botonAlien" mnemonicParsing="false" styleClass="botonMenu" text="JUGAR">
+         <Button fx:id="botonAlien" mnemonicParsing="false" onAction="#jugarClick" styleClass="botonMenu" text="JUGAR">
             <StackPane.margin>
                <Insets right="1250.0" top="400.0" />
             </StackPane.margin>
             <font>
-               <Font name="Segoe UI Semibold" size="18.0" />
+               <Font name="Upheaval TT -BRK-" size="18.0" />
             </font>
          </Button>
          <Button fx:id="botonAlien1" mnemonicParsing="false" onAction="#ajustesClick" styleClass="botonMenu" text="AJUSTES">
-            <font>
-               <Font name="Segoe UI Semibold" size="18.0" />
-            </font>
             <opaqueInsets>
                <Insets />
             </opaqueInsets>
@@ -35,7 +32,7 @@
          </Button>
          <Button fx:id="botonAlien11" mnemonicParsing="false" onAction="#salirClick" styleClass="botonMenu" text="SALIR">
             <font>
-               <Font name="Segoe UI Semibold" size="18.0" />
+               <Font name="Upheaval TT -BRK-" size="18.0" />
             </font>
             <opaqueInsets>
                <Insets />

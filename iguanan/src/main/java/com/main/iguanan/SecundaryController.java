@@ -12,6 +12,7 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
 import javafx.scene.text.Font;
+import javafx.stage.Stage;
 
 public class SecundaryController {
         @FXML
@@ -32,15 +33,10 @@ public class SecundaryController {
         ajustes = true;
     }
 
-    public void salirajustesClick(){
-        try {
-            App.setRoot("secondary");
-            
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        ajustes = false;
+
+
+    public void jugarClick(){
+        App.run();
     }
     
     public void salirClick(){

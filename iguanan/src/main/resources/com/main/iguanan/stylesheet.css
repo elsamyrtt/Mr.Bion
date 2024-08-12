@@ -1,8 +1,24 @@
 .botonMenu {
-    -fx-background-color: #2f2e31;
-    -fx-text-fill: #91918f;
+    -fx-font-family: 'Upheaval';
+    -fx-font-size: 18px;
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
 }
-.botonMenu:hover{
-    -fx-background-color: #7f7c97;
-    -fx-text-fill: #2f2e31;
+
+.botonMenu:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-text-fill: #2f2e31; /* Optional: Change text color on hover */
+}
+
+.botonMenu:pressed {
+    -fx-background-color: rgba(255, 255, 255, 0.4);
+}
+
+@font-face {
+    font-family: 'Upheaval';
+    src: url('upheavtt.ttf');
 }

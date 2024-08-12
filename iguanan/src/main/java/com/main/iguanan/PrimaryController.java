@@ -1,10 +1,10 @@
 package com.main.iguanan;
 
 import javafx.fxml.FXML;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.media.MediaView;
-
 import java.io.IOException;
 import java.net.URL;
 
@@ -27,7 +27,7 @@ public class PrimaryController {
                 mediaView.setMediaPlayer(mediaPlayer);
                 mediaPlayer.setOnEndOfMedia(() -> {
                     try {
-                        extracted();
+                        skipVideo();
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
@@ -36,6 +36,14 @@ public class PrimaryController {
                     System.err.println("Error: " + mediaPlayer.getError());
                 });
                 mediaPlayer.play();
+
+                // Add listener to ensure the scene is set before adding the key event handler
+                mediaView.sceneProperty().addListener((obs, oldScene, newScene) -> {
+                    if (newScene != null) {
+                        newScene.setOnKeyPressed(this::handleKeyPressed);
+                    }
+                });
+
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -44,7 +52,15 @@ public class PrimaryController {
         }
     }
 
-    private void extracted() throws IOException {
+    private void handleKeyPressed(KeyEvent event) {
+        try {
+            skipVideo();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void skipVideo() throws IOException {
         mediaPlayer.pause();
         App.setRoot("secondary");
     }
